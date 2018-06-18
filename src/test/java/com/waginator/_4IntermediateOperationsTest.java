@@ -14,8 +14,6 @@ import java.util.stream.Stream;
  * User: DanielW
  * Date: 07.06.2018
  * Time: 14:02
- * <p>
- * Copyright LucaNet AG
  */
 
 public class _4IntermediateOperationsTest {

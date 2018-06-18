@@ -11,8 +11,6 @@ import java.util.List;
  * User: DanielW
  * Date: 07.06.2018
  * Time: 12:16
- * <p>
- * Copyright LucaNet AG
  */
 
 public class _1HandsOn {

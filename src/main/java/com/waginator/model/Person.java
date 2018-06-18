@@ -7,8 +7,6 @@ import java.util.List;
  * User: DanielW
  * Date: 07.06.2018
  * Time: 12:07
- * <p>
- * Copyright LucaNet AG
  */
 
 public class Person implements Comparable<Person>{

@@ -13,8 +13,6 @@ import java.util.Optional;
  * User: DanielW
  * Date: 07.06.2018
  * Time: 14:01
- * <p>
- * Copyright LucaNet AG
  */
 
 public class _3TerminalOperationsTest {

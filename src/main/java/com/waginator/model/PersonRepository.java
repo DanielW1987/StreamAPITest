@@ -7,8 +7,6 @@ import java.util.*;
  * User: DanielW
  * Date: 07.06.2018
  * Time: 12:13
- * <p>
- * Copyright LucaNet AG
  */
 
 public class PersonRepository {

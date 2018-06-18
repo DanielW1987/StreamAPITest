@@ -12,8 +12,6 @@ import java.util.stream.Stream;
  * User: DanielW
  * Date: 07.06.2018
  * Time: 13:54
- * <p>
- * Copyright LucaNet AG
  */
 public class _2CreateStreamsTest {
 
