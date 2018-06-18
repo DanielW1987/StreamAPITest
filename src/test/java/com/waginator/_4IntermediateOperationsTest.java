@@ -1,8 +1,8 @@
-package examples;
+package com.waginator;
 
-import model.Gender;
-import model.Person;
-import model.PersonRepository;
+import com.waginator.model.Gender;
+import com.waginator.model.Person;
+import com.waginator.model.PersonRepository;
 import org.junit.Test;
 
 import java.util.Arrays;

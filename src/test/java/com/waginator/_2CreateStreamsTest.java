@@ -1,4 +1,4 @@
-package examples;
+package com.waginator;
 
 import org.junit.Test;
 
