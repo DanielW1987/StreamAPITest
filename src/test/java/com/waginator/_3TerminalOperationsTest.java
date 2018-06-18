@@ -68,6 +68,14 @@ public class _3TerminalOperationsTest {
      * In a non-parallel operation, it will most likely return the first element in the Stream but
      * there is no guarantee for this.
      */
+    // Finde irgendeinen männlichen Polizisten
+    Person person1 = persons.stream()
+                            .filter(p ->    p.getGender() == Gender.MALE
+                                         && p.getJobTitle().equals("Polizei"))
+                            .findAny()
+                            .get();
+
+    System.out.println(person1);
 
     /*
      * findFirst()
@@ -75,6 +83,13 @@ public class _3TerminalOperationsTest {
      * Streams may or may not have a defined encounter order. It depends on the
      * source and the intermediate operations.
      */
+    // Finde die erste Frau
+    Person person2 = persons.stream()
+                            .filter(p -> p.getGender() == Gender.FEMALE)
+                            .findFirst()
+                            .get();
+
+    System.out.println(person2);
 
   }
 
@@ -97,7 +112,15 @@ public class _3TerminalOperationsTest {
 
   @Test
   public void reduce(){
-    // ToDo
+    // Komma-separierte Liste der Namen aller Personen, die im Jahr 1975 oder später geboren sind
+    String names = persons.stream()
+                          .filter(person -> person.getBirthday().getYear() >= 1975 )
+                          .map(person -> person.getName())
+                          .reduce( ( s1, s2 ) -> s1 + ", " + s2 )
+                          .get();
+
+    System.out.println(names);
+
   }
 
   @Test

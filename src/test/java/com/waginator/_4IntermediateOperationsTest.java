@@ -5,10 +5,7 @@ import com.waginator.model.Person;
 import com.waginator.model.PersonRepository;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.OptionalDouble;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -150,6 +147,7 @@ public class _4IntermediateOperationsTest {
     // Alle Personen nach Namen sortieren
     persons.stream()
            .sorted((p1, p2) -> p1.getName().compareTo(p2.getName()))
+           //.sorted(Comparator.comparing(Person::getName))
            .forEach(System.out::println);
   }
 
